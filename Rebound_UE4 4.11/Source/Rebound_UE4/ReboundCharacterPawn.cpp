@@ -16,6 +16,8 @@ AReboundCharacterPawn::AReboundCharacterPawn()
 
 	characterMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh"));
 	characterMesh->AttachTo(RootComponent);
+
+	Controller->Possess(this);
 }
 
 // Called when the game starts or when spawned
@@ -37,5 +39,11 @@ void AReboundCharacterPawn::SetupPlayerInputComponent(class UInputComponent* Inp
 {
 	Super::SetupPlayerInputComponent(InputComponent);
 
+}
+
+void AReboundCharacterPawn::Move(FVector MovementDir)
+{
+	const FVector curMovementSpeed = MovementDir * baseMovementSpeed;
+	Root->SetPhysicsLinearVelocity(curMovementSpeed);
 }
 

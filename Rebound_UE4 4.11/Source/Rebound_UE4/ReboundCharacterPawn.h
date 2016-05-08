@@ -29,4 +29,16 @@ public:
 	UPROPERTY(EditAnywhere)
 		USkeletalMeshComponent* characterMesh;
 
+	UPROPERTY(EditAnywhere)
+		float baseMovementSpeed;
+
+	UPROPERTY(EditAnywhere)
+		float baseThrowStrength;
+
+	UPROPERTY(EditAnywhere)
+		float MaxThrowStrength;
+
+	UFUNCTION(BlueprintCallable, Category = "ReboundCharacterPawn")
+		void Move(FVector MovementDir);
+
 };
