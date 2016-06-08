@@ -40,7 +40,7 @@ Rebound/SourceArt/**/*.png
 Rebound/SourceArt/**/*.tga
 
 # Binary Files
-# Rebound/Binaries/
+Rebound/Binaries/
 
 !Rebound/Binaries/Win64/UE4Editor-Rebound.dll
 !Rebound/Binaries/Win64/UE4Editor.modules
