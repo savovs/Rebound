@@ -40,7 +40,7 @@ Rebound_UE4 4.11/SourceArt/**/*.png
 Rebound_UE4 4.11/SourceArt/**/*.tga
 
 # Binary Files
-Rebound_UE4 4.11/Binaries/*
+# Rebound_UE4 4.11/Binaries/*
 
 # Builds
 Rebound_UE4 4.11/Build/*
