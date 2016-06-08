@@ -61,3 +61,5 @@ Rebound/Intermediate/*
 # Cache files for the editor to use
 Rebound/DerivedDataCache/*
 Rebound/Content/BluePrints/TestAssets/Target.uasset
+
+Rebound_UE4 4.11/*
