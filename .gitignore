@@ -43,7 +43,7 @@ Rebound_4_12/SourceArt/**/*.tga
 
 # Binary Files
 Rebound/Binaries/
-#Rebound_4_12/Binaries/
+Rebound_4_12/Binaries/
 
 !Rebound/Binaries/Win64/UE4Editor-Rebound.dll
 !Rebound/Binaries/Win64/UE4Editor.modules
