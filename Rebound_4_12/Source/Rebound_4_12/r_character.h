@@ -10,7 +10,13 @@ class REBOUND_4_12_API Ar_character : public ACharacter
 {
 	GENERATED_BODY()
 
+private:
+	FVector camDir;
+
 public:
+	
+	bool bDisableMovment;
+	
 	// Sets default values for this character's properties
 	Ar_character();
 

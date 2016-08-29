@@ -16,13 +16,14 @@ Ar_character::Ar_character()
 void Ar_character::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
 void Ar_character::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
+
+	if (GEngine) camDir = FVector(0,0,GEngine->GetFirstLocalPlayerController(GetWorld())->PlayerCameraManager->GetCameraRotation);
 
 }
 
@@ -35,12 +36,12 @@ void Ar_character::SetupPlayerInputComponent(class UInputComponent* InputCompone
 
 void Ar_character::MoveVertical(float inputAxisY)
 {
-
+	if (!bDisableMovment) AddMovementInput(camDir.ForwardVector, inputAxisY);
 }
 
 void Ar_character::MoveHorizontal(float inputAxisX)
 {
-
+	if (!bDisableMovment) AddMovementInput(camDir.RightVector, inputAxisX);
 }
 
 
